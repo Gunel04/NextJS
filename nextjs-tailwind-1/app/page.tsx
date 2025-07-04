@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { BsCart3 } from "react-icons/bs";
+import { CiCircleCheck } from "react-icons/ci";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaCircleCheck, FaXTwitter } from "react-icons/fa6";
 import { IoIosPin } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -92,6 +93,18 @@ export default function Home() {
               <button className="my-3 text-lg border-1 py-4 px-9 font-medium transition duration-600 hover:text-white hover:bg-blue-950">Order Now</button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="w-[80%] mx-auto flex justify-around bg-[#001b3b] text-white my-20 py-10">
+        <div>
+          <p className="text-xl flex items-center gap-2"><FaCircleCheck className="inline-block text-blue-600" /> 24/7 Customer Support</p>
+        </div>
+        <div>
+          <p className="text-xl flex items-center gap-2"><FaCircleCheck  className="inline-block text-blue-600"/> 1-Click Install</p>
+        </div>
+        <div>
+          <p className="text-xl flex items-center gap-2"><FaCircleCheck  className="inline-block text-blue-600"/> 99.9% Uptime Guarantee</p>
         </div>
       </section>
       <footer className="bg-[#001b3b] text-white py-20">

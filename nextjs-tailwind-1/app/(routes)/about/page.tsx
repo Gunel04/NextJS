@@ -9,22 +9,6 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 const about = () => {
   return (
     <>
-      <header className="px-10 py-6 flex items-center justify-around">
-        <img className="w-4xs" src="https://html.designingmedia.com/buyhost/assets/images/logo.png" alt="" />
-        <ul className="flex justify-between w-sm">
-          <li><a className="transition duration-600 hover:text-blue-600" href="#">Home</a></li>
-          <li><a className="transition duration-600 hover:text-blue-600" href="#">Hosting</a></li>
-          <li><a className="transition duration-600 hover:text-blue-600" href="#">Pages</a></li>
-          <li><a className="transition duration-600 hover:text-blue-600" href="#">Blog</a></li>
-          <li><a className="transition duration-600 hover:text-blue-600" href="#">Contact Us</a></li>
-        </ul>
-        <div className="w-1/6  flex items-center justify-between">
-          <button className="text-blue-600 border-1 border-blue-200 py-2 px-4 transition duration-600 hover:bg-blue-600 hover:text-white">Sign In</button>
-          <button className="border-1 border-blue-200 p-2 transition duration-600 hover:bg-blue-600 hover:text-white"><BsCart3 size={22} /></button>
-          <button className="border-1 border-blue-200 p-2 transition duration-600 hover:bg-blue-600 hover:text-white"><IoSearch size={22} /></button>
-          <button className="border-1 border-blue-200 p-2 bg-blue-600 text-white transition duration-600 hover:bg-white hover:text-blue-600"><RxHamburgerMenu size={22} /></button>
-        </div>
-      </header>
       <section style={{ backgroundImage: "url('https://html.designingmedia.com/buyhost/assets/images/subbanner-backgroundimage.jpg')" }} className='p-45 text-white'>
         <h1 className='text-6xl font-bold'>About Us</h1>
         <p className='my-7 text-2xl'>Lorem ipsum dolor sit amet, consectetuer adipiscing aenean commodo ligula ege.</p>
@@ -155,56 +139,6 @@ const about = () => {
           </div>
         </div>
       </section>
-
-      <footer className="bg-[#001b3b] text-white py-20">
-              <div className="flex w-[80%] m-auto justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold my-10">Our Services</h3>
-                  <ul>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Shared Hosting</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Reseller Hosting</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Virtual Private Servers</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Dedicated Hosting</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Domain Registration</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold my-10">About Us</h3>
-                  <ul>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Blogs</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">About Us</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">FAQ</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Pricing Plan</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold my-10">Community</h3>
-                  <ul>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Knowldge Base</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Provacy Policy</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">Acceptable Use Policy</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#">News</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold my-10">Mailing Address</h3>
-                  <ul>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#"><IoIosPin className="text-blue-600 inline-block"/> 121 King Street, Melbourne Victoria 3000 Australia</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#"><FaPhoneAlt className="text-blue-600 inline-block"/> +61 3 8376 6284</a></li>
-                    <li className="my-2 transition duration-700 hover:text-blue-600"><a href="#"><FaEnvelope className="text-blue-600 inline-block"/> info@byhost.com</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex items-center w-[80%] m-auto justify-between mt-15">
-                <img src="https://html.designingmedia.com/buyhost/assets/images/footer-logo.png" alt="" />
-                <p>Copyright {new Date().getFullYear()} DesigningMedia. All Rights Reserved</p>
-                <div className="w-[15%] flex justify-between">
-                  <button className="p-3 border-1 border-blue-600 text-blue-600 transition duration-700 hover:text-white hover:bg-blue-600"><FaFacebookF /></button>
-                  <button className="p-3 border-1 border-blue-600 text-blue-600 transition duration-700 hover:text-white hover:bg-blue-600"><FaXTwitter /></button>
-                  <button className="p-3 border-1 border-blue-600 text-blue-600 transition duration-700 hover:text-white hover:bg-blue-600"><FaLinkedinIn /></button>
-                </div>
-              </div>
-            </footer>
     </>
   )
 }

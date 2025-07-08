@@ -5,8 +5,8 @@ import { IoIosPin } from 'react-icons/io'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#001b3b] text-white py-20">
-        <div className="flex w-[80%] m-auto justify-between">
+    <footer className="bg-[#001b3b] text-white lg:py-20 py-5">
+        <div className="flex flex-col text-center lg:text-left md:w-[80%] w-[50%] m-auto justify-between lg:flex-row">
           <div>
             <h3 className="text-xl font-semibold my-10">Our Services</h3>
             <ul>
@@ -44,10 +44,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex items-center w-[80%] m-auto justify-between mt-15">
-          <img src="https://html.designingmedia.com/buyhost/assets/images/footer-logo.png" alt="" />
-          <p>Copyright {new Date().getFullYear()} DesigningMedia. All Rights Reserved</p>
-          <div className="w-[15%] flex justify-between">
+        <div className="flex flex-col md:flex-row items-center w-[80%] m-auto justify-between mt-15">
+          <img className=' my-3' src="https://html.designingmedia.com/buyhost/assets/images/footer-logo.png" alt="" />
+          <p className=' my-3'>Copyright {new Date().getFullYear()} DesigningMedia. All Rights Reserved</p>
+          <div className="w-[15%] flex justify-center md:justify-between my-3">
             <button className="p-3 border-1 border-blue-600 text-blue-600 transition duration-700 hover:text-white hover:bg-blue-600"><FaFacebookF /></button>
             <button className="p-3 border-1 border-blue-600 text-blue-600 transition duration-700 hover:text-white hover:bg-blue-600"><FaXTwitter /></button>
             <button className="p-3 border-1 border-blue-600 text-blue-600 transition duration-700 hover:text-white hover:bg-blue-600"><FaLinkedinIn /></button>

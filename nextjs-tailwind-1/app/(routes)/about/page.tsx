@@ -1,12 +1,12 @@
+import { Metadata } from 'next'
 import React from 'react'
-import { BsCart3 } from 'react-icons/bs'
-import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
-import { IoIosPin } from 'react-icons/io'
-import { IoSearch } from 'react-icons/io5'
-import { RxHamburgerMenu } from 'react-icons/rx'
 
-const about = () => {
+export const metadata : Metadata = {
+  title : "BuyHost - About",
+  description:"About page of BuyHost website"
+}
+
+const About = () => {
   return (
     <>
       <section style={{ backgroundImage: "url('https://html.designingmedia.com/buyhost/assets/images/subbanner-backgroundimage.jpg')" }} className='p-45 text-white'>
@@ -143,4 +143,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

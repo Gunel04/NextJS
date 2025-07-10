@@ -1,12 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import { BsCart3 } from "react-icons/bs";
-import { CiCircleCheck } from "react-icons/ci";
-import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
+import { Metadata } from "next";
+import {FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaCircleCheck, FaXTwitter } from "react-icons/fa6";
-import { IoIosPin } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
-import { RxHamburgerMenu } from "react-icons/rx";
+
+export const metadata: Metadata = {
+    title: "BuyHost - Home page",
+    description: "Home page of BuyHost website"
+}
 
 export default function Home() {
     return (

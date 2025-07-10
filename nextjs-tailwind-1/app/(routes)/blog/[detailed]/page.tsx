@@ -1,29 +1,25 @@
-import { log } from 'console';
+import { Metadata } from 'next';
 import Link from 'next/link'
 import React from 'react'
-import { blogData } from '@/app/data/blogData';
 import { FaCalendarAlt, FaFacebookF, FaInstagram, FaLinkedinIn, FaSearch } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
+
+export const metadata: Metadata = {
+    title: "BuyHost - Blog",
+    description: "Blog details page of BuyHost website"
+}
+
 const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }) => {
+    // const res = await fetch('http://localhost:3000/api');
+    // const blogDetails = await res.json();
+
+    const blogDetails = await fetch('http:localhost:3000/api').then(res => res.json());
+
     const slug = (await params).detailed;
     const decodedSlug = decodeURIComponent(slug).toLowerCase();
-    console.log(slug);
 
-    console.log(decodedSlug);
-
-    const singleBlog = blogData.find(b => b.title === decodedSlug.split(' ').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(" "));
-    //       const matchedBlog = blogData.find(blog =>
-    //     blog.title.toLowerCase().replace(/\s+/g, '-') === decodedSlug
-    //   );
-    // console.log(typeof decodedSlug);
-    // for (let i = 0; i < decodedSlug.length; i++) {
-    //     if(decodedSlug[i] === " "){
-    //         decodedSlug[i+1] = decodedSlug[i+1].toUpperCase();
-    //     }
-    // }
-
-
+    const singleBlog = blogDetails.find((b: any) => b.title === decodedSlug.split(' ').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(" "));
 
     return (
         <>
@@ -42,10 +38,8 @@ const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }
                     <p className='text-gray-600'>{singleBlog?.description}</p>
                 </div>
                 <div className='lg:w-[34%] w-[100%]'>
-
                     <div className='w-[100%] p-10  mb-10 shadow-xl'>
                         <h1 className='text-3xl text-center font-semibold py-3 border-b-2 border-b-gray-400'>Search News</h1>
-                        {/* <hr /> */}
                         <div className='flex items-center justify-between  my-3 '>
                             <input type="text" placeholder='Search Here...' className=' pl-3 h-12 border-1 border-gray-300 w-[100%] border-r-0' />
                             <div className='bg-blue-600 text-white h-12 flex items-center w-15 justify-center transition duration-700 hover:bg-[#001b3b]'>
@@ -57,16 +51,14 @@ const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }
                         <h1 className='text-3xl text-center font-semibold py-3 border-b-1 border-b-gray-400'>Follow Us</h1>
                         <div className='w-[100%] flex justify-around mt-8 '>
                             <button className='bg-blue-600 p-4 text-lg rounded-3xl text-white transition duration-700 hover:bg-[#001b3b]'><FaLinkedinIn /></button>
-                            <button className='bg-blue-600 p-4 text-lg rounded-3xl text-white transition duration-700 hover:bg-[#001b3b]'><FaInstagram  /></button>
+                            <button className='bg-blue-600 p-4 text-lg rounded-3xl text-white transition duration-700 hover:bg-[#001b3b]'><FaInstagram /></button>
                             <button className='bg-blue-600 p-4 text-lg rounded-3xl text-white transition duration-700 hover:bg-[#001b3b]'><FaFacebookF /></button>
-                            <button className='bg-blue-600 p-4 text-lg rounded-3xl text-white transition duration-700 hover:bg-[#001b3b]'><FaXTwitter  /></button>
+                            <button className='bg-blue-600 p-4 text-lg rounded-3xl text-white transition duration-700 hover:bg-[#001b3b]'><FaXTwitter /></button>
                         </div>
                     </div>
                 </div>
-
             </section>
         </>
     )
 }
-// decodedSlug.split('-').map(p=>p.charAt(0).toUpperCase()+p.slice(1)).join(" ")
 export default BlogDetails

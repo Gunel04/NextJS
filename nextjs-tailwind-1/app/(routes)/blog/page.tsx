@@ -1,67 +1,18 @@
+import { Metadata } from 'next';
 import Link from 'next/link'
 import React from 'react'
 import { FaCalendarAlt } from 'react-icons/fa'
-import { blogData } from '@/app/data/blogData';
-// interface BlogDataType {
-//     id: number | string,
-//     title: string,
-//     description: string,
-//     image: string,
-//     date: string,
-//     slug:string
-// }
-// const blogData: BlogDataType[] = [
-//     {
-//         id: 1,
-//         title: "Our strength, Your Business",
-//         description: "Card 1",
-//         image: "https://html.designingmedia.com/buyhost/assets/images/single-blog-tab-img1.jpg",
-//         date: "July 1, 2025",
-//         slug: "our-strength,-your-business"
-//     },
-//     {
-//         id: 2,
-//         title: "How's the Economy?",
-//         description: "Card 2",
-//         image: "https://html.designingmedia.com/buyhost/assets/images/single-blog-tab-img2.jpg",
-//         date: "July 1, 2025",
-//         slug: "how's-the-economy?"
-//     },
-//     {
-//         id: 3,
-//         title: "Our strength, Your Business",
-//         description: "Card 3",
-//         image: "https://html.designingmedia.com/buyhost/assets/images/single-blog-tab-img3.jpg",
-//         date: "July 1, 2025",
-//         slug: "our-strength,-your-business"
-//     },
-//     {
-//         id: 4,
-//         title: "Our strength, Your Business",
-//         description: "Card 4",
-//         image: "https://html.designingmedia.com/buyhost/assets/images/single-blog-tab-img4.jpg",
-//         date: "July 1, 2025",
-//         slug: "our-strength,-your-business"
-//     },
-//     {
-//         id: 5,
-//         title: "Our strength, Your Business",
-//         description: "Card 5",
-//         image: "https://html.designingmedia.com/buyhost/assets/images/single-blog-tab-img5.jpg",
-//         date: "July 1, 2025",
-//         slug: "our-strength,-your-business"
-//     },
-//     {
-//         id: 6,
-//         title: "Our strength, Your Business",
-//         description: "Card 6",
-//         image: "https://html.designingmedia.com/buyhost/assets/images/single-blog-tab-img6.jpg",
-//         date: "July 1, 2025",
-//         slug: "our-strength,-your-business"
-//     }
 
-// ]
-const Blog = () => {
+export const metadata: Metadata = {
+    title: "BuyHost - Blog",
+    description: "Blog page of BuyHost website"
+}
+
+const Blog = async () => {
+    // const response = await fetch('http://localhost:3000/api');
+    // const blogs = await response.json();
+
+    const blogs = await fetch('http://localhost:3000/api').then(res => res.json())
 
     return (
         <>
@@ -75,13 +26,13 @@ const Blog = () => {
             <section className='w-[80%] m-auto '>
                 <h1 className='text-center md:text-5xl text-3xl font-semibold my-5'>Our Blogs</h1>
                 <div className='flex flex-wrap gap-6 my-10'>
-                    {blogData.map((item: any) => (
+                    {blogs.map((item: any) => (
                         <div key={item.id} className='shadow-xl md:w-[48%] w-[100%]'>
                             <img className='w-[100%] object-cover' src={item.image} alt="" />
                             <div className='p-5'>
                                 <p className='flex items-center gap-1.5 text-sm'><FaCalendarAlt size={18} className='inline-block text-blue-700' /> {item.date}</p>
                                 <h2 className='text-2xl font-semibold my-2'>{item.title}</h2>
-                                <p className='my-2 text-gray-600'>{item.description.slice(0,80)}...</p>
+                                <p className='my-2 text-gray-600'>{item.description.slice(0, 80)}...</p>
                                 <Link href={`/blog/${item.title}`}>
                                     <button className='font-semibold border-b-2'>Read More</button>
                                 </Link>

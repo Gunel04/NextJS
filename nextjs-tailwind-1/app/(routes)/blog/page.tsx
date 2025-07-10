@@ -5,7 +5,7 @@ import { FaCalendarAlt } from 'react-icons/fa'
 
 export const metadata: Metadata = {
     title: "BuyHost - Blog",
-    description: "Blog page of BuyHost website"
+    description: "Stay updated with the latest web hosting tips, tech news, and expert guides. Explore our blog to boost your website’s performance and security."
 }
 
 const Blog = async () => {

@@ -7,7 +7,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 export const metadata: Metadata = {
     title: "BuyHost - Blog",
-    description: "Blog details page of BuyHost website"
+    description: "Read in-depth insights and practical tips on web hosting, domains, and website optimization. Discover expert advice tailored for all skill levels."
 }
 
 const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }) => {

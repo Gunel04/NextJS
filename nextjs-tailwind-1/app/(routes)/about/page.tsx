@@ -3,7 +3,7 @@ import React from 'react'
 
 export const metadata : Metadata = {
   title : "BuyHost - About",
-  description:"About page of BuyHost website"
+  description:"Learn more about our mission, experience, and the team behind your trusted hosting service. We're committed to powering your digital success."
 }
 
 const About = () => {

@@ -28,7 +28,7 @@ const Dashboard = () => {
                                 <td>{item.title}</td>
                                 <td>{item.description.slice(0, 95)}...</td>
                                 <td>{item.date}</td>
-                                <td><Link href={`/blog/${item.title}`} className='btn btn-info'>Show</Link><button className='btn btn-warning mx-3'>Edit</button><button type='button' onClick={()=>{deletingBlog(item.id)}} className='btn btn-danger'>X</button></td>
+                                <td><Link href={`/blog/${item.title}`} className='btn btn-info'>Show</Link><Link href={`/dashboard/edit/${item.title}`} className='btn btn-warning mx-3'>Edit</Link><button type='button' onClick={()=>{deletingBlog(item.id)}} className='btn btn-danger'>X</button></td>
                             </tr>
                         ))}
 

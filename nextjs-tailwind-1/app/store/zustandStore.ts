@@ -10,7 +10,8 @@ interface BlogType {
 interface BlogStoreType {
     blogs: BlogType[],
     addingBlog: (id: number, image: string, title: string, description: string, date: string) => void,
-    deletingBlog: (id:number) => void;
+    deletingBlog: (id:number) => void,
+    updateBlog: (id:number, newImage:string, newTitle:string, newDescription:string, newDate:string) => void;
 }
 
 export const useStore = create<BlogStoreType>((set) => ({
@@ -26,5 +27,8 @@ export const useStore = create<BlogStoreType>((set) => ({
     })),
     deletingBlog: (id) => set((state)=>({
         blogs: state.blogs.filter((item)=>item.id !== id)
+    })),
+    updateBlog: (id, newImage, newTitle, newDescription, newDate) => set((state)=>({
+        blogs: state.blogs.map((item)=>item.id === id ? {...blogs, image: newImage, title:newTitle, description: newDescription, date: newDate} : blogs)
     }))
 }))

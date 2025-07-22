@@ -11,11 +11,7 @@ export const metadata: Metadata = {
     ]
 }
 
-export default function Home() {
-    // console.log(null == undefined);
-    let x;
-    console.log(x);
-    
+export default function Home() { 
     return (
         <>
             <section style={{ backgroundImage: "url('https://html.designingmedia.com/buyhost/assets/images/banner-backgroundimage.jpg')" }} className="text-white flex justify-between p-20 md:p-35 flex-col md:flex-row">

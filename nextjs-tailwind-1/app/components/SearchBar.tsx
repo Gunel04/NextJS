@@ -1,23 +1,17 @@
 'use client'
-import { useStore } from '@/app/store/zustandStore';
-import { Metadata } from 'next';
-import Link from 'next/link'
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation'
 import React from 'react'
-import { FaCalendarAlt } from 'react-icons/fa'
+import { useStore } from '../store/zustandStore';
+import Link from 'next/link';
+import { FaCalendarAlt } from 'react-icons/fa';
 
-// export const metadata: Metadata = {
-//     title: "BuyHost - Blog",
-//     description: "Stay updated with the latest web hosting tips, tech news, and expert guides. Explore our blog to boost your website’s performance and security."
-// }
+const SearchBar = () => {
+    const blogList = useStore(state => state.blogs);
+    const searchParams = useSearchParams();
+    const search = searchParams.get("keyword");
+    const currentBlog = blogList.filter(p => p.title === search);
+    console.log(currentBlog);
 
-const Blog = () => {
-    // const response = await fetch('http://localhost:3000/api');
-    // const blogs = await response.json();
-
-    // const blogs = await fetch('http://localhost:3000/api').then(res => res.json())
-    const blogList = useStore((state) => state.blogs);
-    
     return (
         <>
             <section style={{ backgroundImage: "url('https://html.designingmedia.com/buyhost/assets/images/subbanner-backgroundimage.jpg')" }} className='w-[100%] sm:text-center px-20 py-15 md:px-35 md:py-23 lg:text-left text-white'>
@@ -30,7 +24,7 @@ const Blog = () => {
             <section className='w-[80%] m-auto '>
                 <h1 className='text-center md:text-5xl text-3xl font-semibold my-5'>Our Blogs</h1>
                 <div className='flex flex-wrap gap-6 my-10'>
-                    {blogList.map((item: any) => (
+                    {currentBlog.map((item: any) => (
                         <div key={item.id} className='shadow-xl md:w-[48%] w-[100%]'>
                             <img className='w-[100%] object-cover' src={item.image} alt="" />
                             <div className='p-5'>
@@ -49,4 +43,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default SearchBar

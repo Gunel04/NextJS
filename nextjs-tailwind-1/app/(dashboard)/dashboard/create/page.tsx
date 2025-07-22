@@ -43,8 +43,6 @@ const CreateBlog = () => {
                     <button type="submit" className="btn btn-outline-primary">Create</button>
                 </form>
             </div>
-
-
         </div>
     )
 }

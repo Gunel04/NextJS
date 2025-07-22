@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     title: "BuyHost - Blog",
     description: "Read in-depth insights and practical tips on web hosting, domains, and website optimization. Discover expert advice tailored for all skill levels."
 }
-
 const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }) => {
     // const res = await fetch('http://localhost:3000/api');
     // const blogDetails = await res.json();

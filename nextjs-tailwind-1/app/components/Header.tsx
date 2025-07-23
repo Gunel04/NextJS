@@ -42,7 +42,7 @@ const Header = () => {
       </ul>
       <div className="w-1/6  flex items-center justify-between">
         <form action="/search" method='GET' className='flex items-center justify-between'>
-          <input type="search" className='border-1 p-2' name='keyword' />
+          <input type="search" className='border-1 p-2' name='keyword' placeholder='Search title...' />
           <button className=" hidden lg:block border-1 border-blue-200 p-2 transition duration-600 hover:bg-blue-600 hover:text-white"><IoSearch size={24} /></button>
           <button className=" hidden lg:block border-1 border-blue-200 p-2 transition duration-600 hover:bg-blue-600 hover:text-white"><BsCart3 size={24} /></button>
           <button className="border-1 border-blue-200 p-2 bg-blue-600 text-white transition duration-600 hover:bg-white hover:text-blue-600"><RxHamburgerMenu size={24} /></button>

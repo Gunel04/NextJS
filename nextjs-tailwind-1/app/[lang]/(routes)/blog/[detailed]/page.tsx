@@ -1,3 +1,4 @@
+import { getDictionary } from '@/app/[lang]/dictionaries';
 import { Metadata } from 'next';
 import Link from 'next/link'
 import React from 'react'
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
     title: "BuyHost - Blog",
     description: "Read in-depth insights and practical tips on web hosting, domains, and website optimization. Discover expert advice tailored for all skill levels."
 }
-const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }) => {
+const BlogDetails = async ({ params }: { params: Promise<{ detailed: string, lang:"en"|"az" }> }) => {
     // const res = await fetch('http://localhost:3000/api');
     // const blogDetails = await res.json();
 
@@ -19,6 +20,8 @@ const BlogDetails = async ({ params }: { params: Promise<{ detailed: string }> }
     const decodedSlug = decodeURIComponent(slug).toLowerCase();
 
     const singleBlog = blogDetails.find((b: any) => b.title === decodedSlug.split(' ').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(" "));
+    const {lang} = await params;
+    const dict = await getDictionary(lang);
 
     return (
         <>

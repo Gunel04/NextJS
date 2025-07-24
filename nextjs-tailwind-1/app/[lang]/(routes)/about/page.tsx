@@ -1,17 +1,20 @@
 import MetaData from '@/app/components/MetaData'
 import { Metadata } from 'next'
 import React from 'react'
+import { getDictionary } from '../../dictionaries';
 
 // export const metadata : Metadata = {
 //   title : "BuyHost - About",
 //   description:"Learn more about our mission, experience, and the team behind your trusted hosting service. We're committed to powering your digital success."
 // }
 // MetaData('BuyHost - About page', "Learn more about our mission, experience, and the team behind your trusted hosting service. We're committed to powering your digital success.")
-const About = () => {
+const About = async({params}:{params:Promise<{lang:"en" | "az"}>}) => {
+  const {lang} = await params;
+  const dict = await getDictionary(lang);
   return (
     <>
       <section style={{ backgroundImage: "url('https://html.designingmedia.com/buyhost/assets/images/subbanner-backgroundimage.jpg')" }} className='p-45 text-white'>
-        <h1 className='text-6xl font-bold'>About Us</h1>
+        <h1 className='text-6xl font-bold'>{dict.products.cart}</h1>
         <p className='my-7 text-2xl'>Lorem ipsum dolor sit amet, consectetuer adipiscing aenean commodo ligula ege.</p>
         <div className='border-1 inline-block px-6 py-1 my-2 border-gray-500'>
           <p className='text-blue-600'><a href="#" className='text-white transition duration-700 hover:text-blue-600'>Home</a> ~ About Us</p>

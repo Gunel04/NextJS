@@ -3,10 +3,12 @@ import { useStore } from '@/app/store/zustandStore';
 import Link from 'next/link';
 import React from 'react'
 import { FaCalendarAlt } from 'react-icons/fa';
+import { getDictionary } from '../../dictionaries';
 
-const BlogItem = () => {
+const BlogItem = async({ params }: { params: { lang: "en" | "az" } }) => {
     const blogList = useStore((state) => state.blogs);
-
+    // const { lang } = await params;
+    // const dict = await getDictionary(lang);
     return (
         <>
 

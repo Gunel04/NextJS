@@ -1,0 +1,86 @@
+{
+  "products": {
+    "cart": "Add to Cart"
+  },
+  "header":{
+    "home":"Ana səhifə",
+    "about": "Haqqımızda",
+    "hosting":"Hostinq",
+    "blog":"Bloq",
+    "contact":"Bizimlə əlaqə"
+  },
+  "footer":{
+    "firstPart":{
+      "name":"Xidmətlərimiz",
+      "listItemOne":"Paylaşılan Hosting",
+      "listItemTwo":"Satıcı Hosting",
+      "listItemThree":"Virtual Şəxsi Serverlər",
+      "listItemFour":"Xüsusi Hosting",
+      "listItemFive":"Domain Qeydiyyatı"
+    },
+    "secondPart":{
+      "name":"Haqqımızda",
+      "listItemOne":"Bloqlar",
+      "listItemTwo":"Haqqımızda",
+      "listItemThree":"Tez-tez verilən suallar",
+      "listItemFour":"Qiymət Planı"
+    },
+    "thirdPart":{
+      "name":"İcma",
+      "listItemOne":"Bilik Bazası",
+      "listItemTwo":"Məxfilik Siyasəti",
+      "listItemThree":"Məqbul İstifadə Siyasəti",
+      "listItemFour":"Xəbərlər"
+    },
+    "fourthPart":{
+      "name":"Poçt Ünvanı",
+      "address":"121 King Street, Melbourne Victoria 3000 Avstraliya"
+    },
+    "copyright":"Copyright 2025 DesigningMedia. Bütün hüquqlar qorunur"
+    
+  },
+  "pages": {
+    "home": {
+      "hero":{
+        "subheading" :"---- 30 günlük Pul Geri Zəmanəti",
+        "heading":"Biznes ehtiyaclarınız üçün uyğunlaşdırılmış etibarlı hosting həlləri",
+        "paragraphOne":"Tamamilə Özəlləşdirilən Linux və Windows Hosting.",
+        "paragraphTwo":"Sənayedə ən aşağı qiymətlərdən həzz alın.",
+        "button" :"Başlayın"
+      },
+      "secondPart": {
+        "heading":"Hosting Planınızı Seçin",
+        "text" :"Sürətli və Təhlükəsiz Veb Hostinqlə Onlayn Mövcudluğunuzu Gücləndirin!",
+        "packages" :{
+          "firstPackage":{
+            "name":"Paylaşılan Hosting",
+            "description":"Veb saytınız üçün ən sürətli SSD əsaslı veb hosting platforması.",
+            "first":"Tək Domen",
+            "second":"Bir kliklə quraşdırmalar",
+            "third":"Limitsiz bant genişliyi",
+            "fourth":"SSL Sertifikatı",
+            "button" :"İndi sifariş edin"
+          },
+          "secondPackage":{
+            "name":"VPS Hosting",
+            "description":"Veb saytınız üçün ən sürətli SSD əsaslı veb hosting platforması.",
+            "first":"Domen RAM",
+            "second":"2 nüvəli CPU",
+            "third":"120 GB disk sahəsi",
+            "fourth":"1,5 TB bant genişliyi",
+            "button" :"İndi sifariş edin"
+          },
+          "thirdPackage":{
+            "name":"Xüsusi Hosting",
+            "description":"Veb saytınız üçün ən sürətli SSD əsaslı veb hosting platforması.",
+            "first":"4 GB Yaddaş",
+            "second":"2 nüvəli CPU",
+            "third":"0,5 TB Disk (RAID-1)",
+            "fourth":"10 TB bant genişliyi",
+            "button" :"İndi sifariş edin"
+          }
+        }
+      }
+    }
+  }
+}

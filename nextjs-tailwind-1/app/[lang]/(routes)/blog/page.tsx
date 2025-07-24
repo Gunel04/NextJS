@@ -12,16 +12,16 @@ export const metadata: Metadata = {
     description: "Stay updated with the latest web hosting tips, tech news, and expert guides. Explore our blog to boost your website’s performance and security."
 }
 
-const Blog = () => {
+const Blog = ({ params }: { params: { lang: "en" | "az" } }) => {
     // const response = await fetch('http://localhost:3000/api');
     // const blogs = await response.json();
 
     // const blogs = await fetch('http://localhost:3000/api').then(res => res.json())
     // const blogList = useStore((state) => state.blogs);
-    
+
     return (
         <>
-            <BlogItem/>
+            <BlogItem params={params} />
         </>
     )
 }

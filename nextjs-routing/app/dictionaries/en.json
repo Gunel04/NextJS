@@ -1,0 +1,10 @@
+{
+    "products": {
+        "cart": "Add to cart"
+    },
+    "pages": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    }
+}

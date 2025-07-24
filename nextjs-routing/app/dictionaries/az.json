@@ -1,0 +1,10 @@
+{
+  "products": {
+    "cart": "Səbətə əlavə et"
+  },
+  "pages":{
+    "home": "Ana səhifə",
+    "about": "Haqqımızda",
+    "contact" : "Əlaqə"
+  }
+}

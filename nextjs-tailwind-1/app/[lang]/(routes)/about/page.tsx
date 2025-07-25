@@ -117,7 +117,7 @@ const About = async({params}:{params:Promise<{lang:"en" | "az"}>}) => {
 
       <section className='w-[80%] mx-auto py-15'>
         <div className='text-center w-[65%] mx-auto'>
-          <h1 className='text-5xl font-bold'>Our Global Partners</h1>
+          <h1 className='text-5xl font-bold'>{dict.pages.about.globalPartners}</h1>
           <p className='text-md my-8 text-gray-500'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore aeu fugiat nulla pariatur rui officia deserunt mollit anim id est laborum</p>
         </div>
         <div className='grid grid-rows-2 grid-cols-4 gap-6'>

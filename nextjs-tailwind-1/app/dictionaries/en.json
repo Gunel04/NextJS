@@ -2,84 +2,103 @@
   "products": {
     "cart": "Add to Cart"
   },
-  "header":{
-    "home":"Home",
+  "header": {
+    "home": "Home",
     "about": "About Us",
-    "hosting":"Hosting",
-    "blog":"Blog",
-    "contact":"Contact Us"
+    "hosting": "Hosting",
+    "blog": "Blog",
+    "contact": "Contact Us"
   },
-  "footer":{
-    "firstPart":{
-      "name":"Our Services",
-      "listItemOne":"Shared Hosting",
-      "listItemTwo":"Reseller Hosting",
-      "listItemThree":"Virtual Private Servers",
-      "listItemFour":"Dedicated Hosting",
-      "listItemFive":"Domain Registration"
+  "footer": {
+    "firstPart": {
+      "name": "Our Services",
+      "listItemOne": "Shared Hosting",
+      "listItemTwo": "Reseller Hosting",
+      "listItemThree": "Virtual Private Servers",
+      "listItemFour": "Dedicated Hosting",
+      "listItemFive": "Domain Registration"
     },
-    "secondPart":{
-      "name":"About Us",
-      "listItemOne":"Blogs",
-      "listItemTwo":"About Us",
-      "listItemThree":"FAQ",
-      "listItemFour":"Pricing Plan"
+    "secondPart": {
+      "name": "About Us",
+      "listItemOne": "Blogs",
+      "listItemTwo": "About Us",
+      "listItemThree": "FAQ",
+      "listItemFour": "Pricing Plan"
     },
-    "thirdPart":{
-      "name":"Community",
-      "listItemOne":"Knowledge Base",
-      "listItemTwo":"Privacy Policy",
-      "listItemThree":"Acceptable Use Policy",
-      "listItemFour":"News"
+    "thirdPart": {
+      "name": "Community",
+      "listItemOne": "Knowledge Base",
+      "listItemTwo": "Privacy Policy",
+      "listItemThree": "Acceptable Use Policy",
+      "listItemFour": "News"
     },
-    "fourthPart":{
-      "name":"Mailing Address",
-      "address":"121 King Street, Melbourne Victoria 3000 Australia"
+    "fourthPart": {
+      "name": "Mailing Address",
+      "address": "121 King Street, Melbourne Victoria 3000 Australia"
     },
-    "copyright":"Copyright 2025 DesigningMedia. All Rights Reserved"
-    
+    "copyright": "Copyright 2025 DesigningMedia. All Rights Reserved"
   },
   "pages": {
     "home": {
-      "hero":{
-        "subheading" :"---- 30-days Money Back Guarantee",
-        "heading":"Reliable Hosting Solutions Tailored for Your Business Needs",
-        "paragraphOne":"Fully Customized Linux and Windows Hosting.",
-        "paragraphTwo":"Enjoy the lowest prices in the industry.",
-        "button" :"Get Started"
+      "hero": {
+        "subheading": "---- 30-days Money Back Guarantee",
+        "heading": "Reliable Hosting Solutions Tailored for Your Business Needs",
+        "paragraphOne": "Fully Customized Linux and Windows Hosting.",
+        "paragraphTwo": "Enjoy the lowest prices in the industry.",
+        "button": "Get Started"
       },
       "secondPart": {
-        "heading":"Choose Your Hosting Plan",
-        "text" :"Empower Your Online Presence with Blazing Fast and Secure Web Hosting!",
-        "packages" :{
-          "firstPackage":{
-            "name":"Shared Hosting",
-            "description":"Fastest SSD based web hosting platform for your websit.",
-            "first":"Single Domain",
-            "second":"One Click Installs",
-            "third":"Unlimited Bandwidth",
-            "fourth":"SSL Certificate",
-            "button" :"Order Now"
+        "heading": "Choose Your Hosting Plan",
+        "text": "Empower Your Online Presence with Blazing Fast and Secure Web Hosting!",
+        "packages": {
+          "firstPackage": {
+            "name": "Shared Hosting",
+            "description": "Fastest SSD based web hosting platform for your websit.",
+            "first": "Single Domain",
+            "second": "One Click Installs",
+            "third": "Unlimited Bandwidth",
+            "fourth": "SSL Certificate",
+            "button": "Order Now"
           },
-          "secondPackage":{
-            "name":"VPS Hosting",
-            "description":"Fastest SSD based web hosting platform for your websit.",
-            "first":"Domain RAM",
-            "second":"2 Cores CPU",
-            "third":"120 GB Disk Space",
-            "fourth":"1.5 TB Bandwidth",
-            "button" :"Order Now"
+          "secondPackage": {
+            "name": "VPS Hosting",
+            "description": "Fastest SSD based web hosting platform for your websit.",
+            "first": "Domain RAM",
+            "second": "2 Cores CPU",
+            "third": "120 GB Disk Space",
+            "fourth": "1.5 TB Bandwidth",
+            "button": "Order Now"
           },
-          "thirdPackage":{
-            "name":"Dedicated Hosting",
-            "description":"Fastest SSD based web hosting platform for your websit.",
-            "first":"4 GB Memory",
-            "second":"2 Cores CPU",
-            "third":"0.5 TB Dsik (RAID-1)",
-            "fourth":"10 TB Bandwidth",
-            "button" :"Order Now"
+          "thirdPackage": {
+            "name": "Dedicated Hosting",
+            "description": "Fastest SSD based web hosting platform for your websit.",
+            "first": "4 GB Memory",
+            "second": "2 Cores CPU",
+            "third": "0.5 TB Dsik (RAID-1)",
+            "fourth": "10 TB Bandwidth",
+            "button": "Order Now"
           }
         }
+      }
+    },
+    "about": {
+      "hero": {
+        "heading": "About Us",
+        "subHeadingOne": "Our Mission",
+        "subHeadingTwo": "Our Vision"
+      },
+      "about": {
+        "left": {
+          "heading": "Hosting Empowered",
+          "info": "Our hosting solutions range from web hosting to blazing fast shared hosting."
+        },
+        "center": "Trusted by thousands of happy customers"
+      },
+      "thirdPart": {
+        "heading": "Our Support knows No Boundaries",
+        "cartOneHeading": "We Host Worldwide",
+        "cartTwoHeading": "Texas Raised",
+        "cartThreeHeading": "24/7/365 Support"
       }
     }
   }

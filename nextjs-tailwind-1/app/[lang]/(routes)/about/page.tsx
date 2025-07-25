@@ -14,33 +14,33 @@ const About = async({params}:{params:Promise<{lang:"en" | "az"}>}) => {
   return (
     <>
       <section style={{ backgroundImage: "url('https://html.designingmedia.com/buyhost/assets/images/subbanner-backgroundimage.jpg')" }} className='p-45 text-white'>
-        <h1 className='text-6xl font-bold'>{dict.products.cart}</h1>
+        <h1 className='text-6xl font-bold'>{dict.pages.about.hero.heading}</h1>
         <p className='my-7 text-2xl'>Lorem ipsum dolor sit amet, consectetuer adipiscing aenean commodo ligula ege.</p>
         <div className='border-1 inline-block px-6 py-1 my-2 border-gray-500'>
-          <p className='text-blue-600'><a href="#" className='text-white transition duration-700 hover:text-blue-600'>Home</a> ~ About Us</p>
+          <p className='text-blue-600'><a href="#" className='text-white transition duration-700 hover:text-blue-600'>{dict.header.home}</a> ~ {dict.pages.about.hero.heading}</p>
         </div>
       </section>
       <section className='flex justify-between w-[80%] m-auto -mt-15 mb-15 gap-6 '>
         <div className='bg-white w-[90%] m-auto p-10 border-1 border-blue-200 transition duration-600 hover:border-blue-600'>
           <img src="https://html.designingmedia.com/buyhost/assets/images/aboutdetail-icon1.png" alt="" />
-          <h3 className='text-2xl font-semibold my-5'>Our Mission</h3>
+          <h3 className='text-2xl font-semibold my-5'>{dict.pages.about.hero.subHeadingOne}</h3>
           <p className='text-gray-500 text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ex ea commodo consequat.</p>
         </div>
         <div className='bg-white w-[90%] m-auto p-10 border-1 border-blue-200 transition duration-600 hover:border-blue-600'>
           <img src="https://html.designingmedia.com/buyhost/assets/images/aboutdetail-icon2.png" alt="" />
-          <h3 className='text-2xl font-semibold my-5'>Our Vision</h3>
+          <h3 className='text-2xl font-semibold my-5'>{dict.pages.about.hero.subHeadingTwo}</h3>
           <p className='text-gray-500 text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ex ea commodo consequat.</p>
         </div>
       </section>
       <section className='w-[80%] mx-auto my-15 gap-5 flex'>
         <div className='w-[25%]'>
-          <h3 className='text-2xl text-blue-500 font-bold'>About Us</h3>
-          <h1 className='text-5xl font-semibold my-3'>Hosting Empowered</h1>
-          <p className='text-gray-500 text-md'>Our hosting solutions range from web hosting to blazing fast shared hosting.</p>
+          <h3 className='text-2xl text-blue-500 font-bold'>{dict.pages.about.hero.heading}</h3>
+          <h1 className='text-5xl font-semibold my-3'>{dict.pages.about.about.left.heading}</h1>
+          <p className='text-gray-500 text-md'>{dict.pages.about.about.left.info}</p>
         </div>
         <div className='w-[23%] text-center px-10 pt-8 bg-blue-50 rounded-xl'>
           <h1 className='text-5xl font-semibold'>17K+</h1>
-          <p>Trusted by thousands of happy customers</p>
+          <p>{dict.pages.about.about.center}</p>
           <img className='bg-blue-500 rounded-lg py-2 px-6 my-3 m-auto' src="https://html.designingmedia.com/buyhost/assets/images/about-detailstar.png" alt="" />
         </div>
         <div className='w-[50%]'>
@@ -51,23 +51,23 @@ const About = async({params}:{params:Promise<{lang:"en" | "az"}>}) => {
       <section className='bg-blue-50 pb-20'>
         <div className='w-[80%] m-auto'>
           <div className='text-center pt-20 pb-10'>
-            <h1 className='text-5xl font-semibold'>Our Support knows No Boundaries</h1>
+            <h1 className='text-5xl font-semibold'>{dict.pages.about.thirdPart.heading}</h1>
             <p className='text-lg text-gray-500 my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div className='flex gap-5'>
             <div className='bg-white p-10 border-1 border-white transition duration-700 hover:border-1 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-300'>
               <img src="https://html.designingmedia.com/buyhost/assets/images/support-icon1.png" alt="" />
-              <h3 className='font-bold text-xl my-5'>We Host Worldwide</h3>
+              <h3 className='font-bold text-xl my-5'>{dict.pages.about.thirdPart.cartOneHeading}</h3>
               <p className='text-gray-500 text-md'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eignim fugiat nulla pariatur.</p>
             </div>
             <div className='bg-white p-10 border-1 border-white transition duration-700 hover:border-1 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-300'>
               <img src="https://html.designingmedia.com/buyhost/assets/images/support-icon2.png" alt="" />
-              <h3 className='font-bold text-xl my-5'>Texas Raised</h3>
+              <h3 className='font-bold text-xl my-5'>{dict.pages.about.thirdPart.cartTwoHeading}</h3>
               <p className='text-gray-500 text-md'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru mollit anim id est laborum.</p>
             </div>
             <div className='bg-white p-10 border-1 border-white transition duration-700 hover:border-1 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-300'>
               <img src="https://html.designingmedia.com/buyhost/assets/images/support-icon3.png" alt="" />
-              <h3 className='font-bold text-xl my-5'>24/7/365 Support</h3>
+              <h3 className='font-bold text-xl my-5'>{dict.pages.about.thirdPart.cartThreeHeading}</h3>
               <p className='text-gray-500 text-md'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eignim fugiat nulla pariatur.</p>
             </div>
           </div>

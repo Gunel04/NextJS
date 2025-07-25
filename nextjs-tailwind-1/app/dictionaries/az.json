@@ -81,6 +81,26 @@
           }
         }
       }
+    },
+    "about": {
+      "hero": {
+        "heading": "Haqqımızda",
+        "subHeadingOne": "Missiyamız",
+        "subHeadingTwo": "Baxışımız"
+      },
+      "about": {
+        "left": {
+          "heading": "Hosting Gücləndirildi",
+          "info": "Hostinq həllərimiz veb hostinqdən tutmuş sürətli paylaşılan hostinqə qədərdir."
+        },
+        "center": "Minlərlə xoşbəxt müştəri tərəfindən etibar edilmişdir"
+      },
+      "thirdPart": {
+        "heading": "Dəstəyimiz Sərhəd tanımır",
+        "cartOneHeading": "Ümumdünya Ev sahibliyi edirik",
+        "cartTwoHeading": "Texas qaldırıldı",
+        "cartThreeHeading": "24/7/365 Dəstək"
+      }
     }
   }
 }
